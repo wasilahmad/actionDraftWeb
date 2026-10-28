@@ -1,0 +1,291 @@
+:root {
+  --color-primary: #474647;
+  --color-secorday: #ffffff;
+  --color-dark: #343a40;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-300 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.inter-500 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.inter-700 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.inter-800 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+}
+
+.container {
+  max-width: 960px;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.my-6 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.py-6 {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.my-8 {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.mb-6 {
+  margin-bottom: 6em;
+}
+
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  padding: 20px 0;
+  background-color: rgba(255,255,255,0.7);
+  border-bottom: solid 1px #E5E7EB;
+}
+.site-header a {
+  color: var(--color-primary);
+  transition: ease-in-out all .15s;
+}
+.site-header a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.site-header .brand-logo {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-primary);
+}
+.site-header .brand-logo:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.header-nav {
+  margin-left: auto;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.header-nav li {
+  display: flex;
+  align-items: center;
+
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { 
+  overflow: hidden; 
+}
+
+
+
+@media (min-width: 1024px) {
+  .features-block {
+    width: 80%;
+  }
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  padding: 10px 20px;
+  color: var(--color-dark);
+  margin-top: 24px;
+}
+.btn-download:hover,
+.btn-download:focus {
+  background-color: #f8f9fa;
+  color: var(--color-dark) ;
+}
+
+@media (min-width: 1024px) {
+  .btn-download {
+    margin-right: 24px;
+  }
+}
+
+.btn-download img {
+  margin-right: 20px;
+}
+
+.btn-download span em {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-download span strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.screen-shot {
+  width: 80%; 
+  height: 300px; 
+  border-radius: 21px 21px 0 0;
+  padding: 10px 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .screen-shot {
+    height: 400px;
+  }
+}
+
+.screen-shot.screen-shot-edit {
+  height: 300px;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.feature-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.upi-id-value {
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-top: 8px;
+}
+
+.footer {
+  color: #a4a4a5;
+  font-weight: 300;
+}
+
+.devider {
+  width: 100%;
+  height: 1px;
+  background-color: #a4a4a5;
+  margin: 16px 0 24px 0;
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  color: #a4a4a5;
+  transition: all 200ms ease-in-out;
+}
+
+.footer-nav a:hover { 
+  color: #ffffff;
+}
+
+.social-media-nav {
+  gap: 24px;
+}
+
+
