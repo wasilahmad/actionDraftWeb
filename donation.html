@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>ActionDraft · Buy Me a Coffee</title>
+
+    <!-- Custom .ico Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/dist/images/icons/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/dist/images/icons/icon-16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/dist/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  <nav class="site-header sticky-top">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+      <a class="brand-logo" href="./index.html" aria-label="ActionDraft">
+        <img src="./assets/dist/images/icons/icon-32.png"/>
+        ActionDraft
+      </a>
+      <ul class="header-nav">
+        <li><a class="d-none d-md-inline-block" href="./support.html">Support</a></li>
+        <li><a class="d-none d-md-inline-block btn btn-outline-secondary btn-download m-0" href="#">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="position-relative overflow-hidden p-0 m-md-3 text-center">
+    <div class="col-md-6 p-md-6 mx-auto my-6">
+      <h1 class="display-4 font-weight-normal mb-4">Buy me a coffee</h1>
+      <p class="lead font-weight-normal">Support independent development and keep it free.</p>   
+    </div>
+  </div>
+
+  <div class="bg-light mb-6 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-md-6 my-6">
+
+          <div class="content-block mb-4">
+            <h2 class="display-5 mb-3">Fuel the Next Feature</h2>
+            <p class="lead">
+              Hi there! I'm <strong>Wasil Sayyed</strong>, creator of <strong>ActionDraft</strong>. I built this Chrome extension to help professionals and creators to generate clean, step-by-step user guide or manual effortlessly—without sacrificing their privacy.
+            </p>
+            <p class="lead">
+              ActionDraft is 100% free, ad-free, and runs entirely locally on your machine. Maintaining the project, adding features, and ensuring compatibility takes continuous time and care.
+            </p>
+            <p class="lead">
+              If ActionDraft has saved you time or made your documentation workflow easier, consider supporting its growth. Every coffee directly fuels continuous performance optimizations and long-term updates!
+            </p>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="position-relative p-0 m-md-3 text-center">
+    <div class="col-md-6 p-md-6 mx-auto my-6">
+      <h1 class="display-4 font-weight-normal mb-4">Instant Support via UPI or Ko-fi</h1> 
+      <p class="lead font-weight-normal mb-5">Use any UPI app on your phone and scan the code below.</p>      
+      <!-- GPay QR Code Container -->
+      <div class="border rounded p-3 bg-white mb-3 d-inline-block shadow-sm">
+        <!-- Replace src with your actual GPay QR code image path -->
+        <!-- <img src="./assets/dist/images/gpay-qr-code.png" alt="Google Pay QR Code" class="img-fluid" style="max-width: 220px; height: auto;"> -->
+        <div id="qrcode"></div>
+        <div class="upi-id-value">UPI ID: wasilinfo-3@okaxis</div>     
+      </div>
+      <!-- UPI ID Copy Box -->
+      <div class="row">
+        <div class="col-md-4 p-md-6 mx-auto mb-4">
+          <div class="w-100 text-left" id="upiIdInputWrapper">
+            <p class="small text-muted mb-1">Prefer copying UPI ID directly?</p>
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control font-weight-bold" value="wasilinfo-3@okaxis" id="upiIdInput" readonly>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="copyUPI()">Copy</button>
+              </div>
+            </div>
+            <small id="copySuccess" class="text-success d-none mt-1">UPI ID copied to clipboard!</small>
+          </div>
+        </div>
+      </div>
+      <p class="lead text-muted mt-4 mb-4">Scan and confirm the receiver’s name is [Wasil Info] before making payment.</p>
+      <p class="lead text-muted mt-4 mb-0">Thank you for supporting open & privacy-first software! ❤️</p>      
+    </div>
+  </div>
+
+  <footer class="footer bg-dark">
+    <div class="container py-6">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="d-block mb-0">ActionDraft &copy; 2026 - All rights reserved</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-right">
+          <p class="d-block mb-0">Powered by <a href="https://wasilahmad.github.io/my-portfolio" target="_blank" rel="noopener noreferrer" class="text-white">Wasil Sayyed</a></p>
+        </div>      
+      </div>
+      <div class="devider"></div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="footer-nav social-media-nav mb-4">
+            <li>
+              <a href="https://www.linkedin.com/in/wasil-sayyed" target="_blank" rel="noopener noreferrer" aria-label="Find me on linked-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/wasil-sayyed" target="_blank" rel="noopener noreferrer" aria-label="Find me on twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+              </a>
+            </li>            
+            <li>
+              <a href="https://www.youtube.com/@wasil-sayyed" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Youtube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="footer-nav justify-content-md-end mb-4">
+            <li><a class="" href="./donation.html">Buy me a coffee</a></li>
+            <li><a class="" href="./support.html">Support</a></li>
+            <li><a class="" href="./privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>      
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> 
+  -->
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('wasilsayyed', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support Me',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
+  <script src="./assets/dist/js/qrcode.min.js"></script>
+  <script>
+    // The string comes from a secure server variable or hardcoded JS constant
+    const upiUri = "upi://pay?pa=wasilinfo-3@okaxis&pn=Wasil%20Info&cu=INR";
+    new QRCode(document.getElementById("qrcode"), {
+      text: upiUri,
+      width: 200,
+      height: 200
+    });
+
+    function copyUPI() {
+      // Get the input element and the success message element
+      const upiInput = document.getElementById('upiIdInput');
+      const successMessage = document.getElementById('copySuccess');
+
+      if (!upiInput) return;
+
+      const upiValue = upiInput.value;
+
+      // Use the modern Clipboard API
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(upiValue)
+          .then(() => {
+            showCopySuccess(successMessage);
+          })
+          .catch(err => {
+            console.error('Failed to copy UPI ID: ', err);
+            fallbackCopy(upiInput, successMessage);
+          });
+      } else {
+        // Fallback for older browsers
+        fallbackCopy(upiInput, successMessage);
+      }
+    }
+
+    // Function to handle the success message visibility
+    function showCopySuccess(successMessageElement) {
+      if (successMessageElement) {
+        // Remove "d-none" to show the element
+        successMessageElement.classList.remove('d-none');
+        
+        // Optional: Auto-hide the success message after 3 seconds
+        setTimeout(() => {
+          successMessageElement.classList.add('d-none');
+        }, 3000);
+      }
+    }
+
+    // Fallback method using document.execCommand('copy')
+    function fallbackCopy(inputElement, successMessageElement) {
+      try {
+        // Select the text field
+        inputElement.select();
+        inputElement.setSelectionRange(0, 99999); // For mobile devices
+
+        // Execute the copy command
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showCopySuccess(successMessageElement);
+        } else {
+          alert('Unable to copy. Please copy it manually.');
+        }
+      } catch (err) {
+        console.error('Fallback copy failed: ', err);
+        alert('Failed to copy UPI ID. Please copy it manually.');
+      }
+      
+      // Deselect the text
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+  </body>
+</html>
